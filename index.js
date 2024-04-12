@@ -27,3 +27,44 @@ function getweather() {
             alert('Error fetching hourly forecast data. Please try again.');
         });
 }
+function displayCurrentWeather(data) {
+    const tempDiv = document.getElementById('temp-div');
+    const weatherInfoDiv = document.getElementById('weather-info');
+    const weatherIcon = document.getElementById('weather-icon');
+
+    const cityName = data.name;
+    const temperature = Math.round(data.main.temp - 273.15);
+    const description = data.weather[0].description;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = https://openweathermap.org/img/wn/${iconCode}.png;
+
+    tempDiv.textContent = ${temperature}°C;
+    weatherInfoDiv.textContent = ${cityName}: ${description};
+    weatherIcon.src = iconUrl;
+}
+
+function displayHourlyForecast(data) {
+    const hourlyForecastDiv = document.getElementById('Hourly-forecast');
+    hourlyForecastDiv.innerHTML = '';
+
+    for (let i = 0; i < data.length; i += 8) {
+        const forecast = data[i];
+        const forecastTime = new Date(forecast.dt * 1000);
+        const forecastTemperature = Math.round(forecast.main.temp - 273.15);
+        const forecastDescription = forecast.weather[0].description;
+
+        const forecastItem = document.createElement('div');
+        forecastItem.textContent = ${forecastTime.toLocaleString()}: ${forecastTemperature}°C, ${forecastDescription};
+        hourlyForecastDiv.appendChild(forecastItem);
+    }
+}
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('data.json');
+const middlewares = jsonServer.defaults();
+
+server.use(middlewares);
+server.use(router);
+server.listen(3000, () => {
+  console.log('JSON Server is running');
+});
