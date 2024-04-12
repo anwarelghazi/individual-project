@@ -14,3 +14,9 @@ This is a simple weather web application that allows users to search for weather
 - HTML
 - CSS
 - JavaScript
+
+## Technologies Used
+
+- OpenWeatherMap API
+- JSON Server
+
