@@ -38,7 +38,7 @@ button {
     font-size: 17px;
     cursor: pointer;
     padding: 12px;
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 15px;
     animation-direction: reverse;
 }
@@ -46,8 +46,10 @@ button:hover {
     background: #833f59;
 }
 #temp-div {
-    margin: -30px;
+    margin: 30px;
     font-size: 60px;
+    margin-bottom: 50px;
+
 }
 #hourly-heading {
     color: #fff;
@@ -55,6 +57,7 @@ button:hover {
 }
 #weather-info {
     font-size: 20px;
+    padding-bottom: px;
 }
 .hourly-item img {
     width: 20px;
@@ -73,7 +76,7 @@ margin-bottom: 0;
     display: flex;
     white-space: nowrap;
     overflow-x: auto;
-    margin-top: 50px;
+    margin-top: 500px;
 }
 .hourly-item {
 align-items: center;    

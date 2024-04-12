@@ -1,0 +1,20 @@
+{
+    "weather": [
+      {
+        "city": "New York",
+        "temperature": "20°C",
+        "description": "Sunny"
+      },
+      {
+        "city": "London",
+        "temperature": "15°C",
+        "description": "Cloudy"
+      },
+      {
+        "city": "Tokyo",
+        "temperature": "25°C",
+        "description": "Rainy"
+      }
+    ]
+  }
+  
