@@ -20,3 +20,13 @@ This is a simple weather web application that allows users to search for weather
 - OpenWeatherMap API
 - JSON Server
 
+## API Key
+
+This application uses the OpenWeatherMap API to fetch weather data. You will need to sign up for an API key [here](https://home.openweathermap.org/users/sign_up) and replace `'YOUR_API_KEY'` in the `index.js` file with your actual API key.
+
+## Support and contact details
+https://github.com/anwarelghazi/individual-project
+
+### License
+The content of this site is licensed under the MIT license
+Copyright (c) 2024
