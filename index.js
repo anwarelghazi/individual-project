@@ -5,7 +5,7 @@ function getweather() {
         return;
     }
 
-    const apiKey = 'YOUR_API_KEY';
+    const apiKey = 'a55855434b8b86167998ac5c3ad647c2';
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
@@ -61,14 +61,3 @@ function displayHourlyForecast(data) {
         hourlyForecastDiv.appendChild(forecastItem);
     }
 }
-
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('data.json');
-const middlewares = jsonServer.defaults();
-
-server.use(middlewares);
-server.use(router);
-server.listen(3000, () => {
-  console.log('JSON Server is running');
-});
