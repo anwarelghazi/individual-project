@@ -29,5 +29,6 @@ This application uses the OpenWeatherMap API to fetch weather data. You will nee
 https://github.com/anwarelghazi/individual-project
 
 ### License
+
 The content of this site is licensed under the MIT license
 Copyright (c) 2024
