@@ -1,4 +1,5 @@
 ## Individual Project
+## ANWAR YASSIN
 ## Weather Web Application
 
 This is a simple weather web application that allows users to search for weather information for a specific city.
